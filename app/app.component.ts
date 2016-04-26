@@ -7,6 +7,8 @@ import {Inne1Component} from './inne1/inne1.component';
 import {HeroService} from './hero.service';
 import {StateService} from './common/state.service';
 import {ExperimentsService} from './common/experiments.service';
+import {OFirmieComponent} from './views/oFirmie/oFirmie.component';
+import {UslugiComponent} from './views/uslugi/uslugi.component';
 
 @Component({
   selector: 'my-app',
@@ -18,6 +20,8 @@ import {ExperimentsService} from './common/experiments.service';
 @RouteConfig([
   // {path: '/', redirectTo: ['Dashboard'] },
   {path: '/homePage', name: 'HomePage', component: HomePageComponent, useAsDefault: true},
+  {path: '/oFirmie', name: 'OFirmie', component: OFirmieComponent},
+  {path: '/uslugi', name: 'Uslugi', component: UslugiComponent},
   {path: '/inne1', name: 'Inne1', component: Inne1Component},
   {path: '/heroes', name: 'Heroes', component: HeroesComponent},
   {path: '/detail/:id', name: 'HeroDetail', component: HeroDetailComponent}

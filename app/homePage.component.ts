@@ -11,7 +11,11 @@ import { List } from 'immutable';
 })
 export class HomePageComponent implements OnInit {
   title: string = 'Naprzód S.A.';
-  body:  string = 'Informacje o stronie';
+  body:  string = 'Informacje o firmie:';
+  KRS: string = '0000480105';
+  NIP: string = '9452176328';
+  REGON: string = '12298360';
+
   public heroes = List<Hero>();
 
   constructor(private _heroService: HeroService, private _router: Router) { }

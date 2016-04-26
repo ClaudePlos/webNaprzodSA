@@ -1,18 +1,67 @@
 <header id="header">
- <h1 id="logo">
-    <a [routerLink]="['/HomePage']"></a>
-  </h1>
+ 
+   <!--
+  <div id="menu">
+   <table id="menu-top">
+    <tr>
+      <td>    
+        <a [routerLink]="['HomePage']">Strona Główna</a>
+        <a [routerLink]="['OFirmie']">O Firmie</a>
+        <a [routerLink]="['Uslugi']">Usługi</a>
+    </tr>
+   </table>
+  </div>  -->
+  
+<div id="kontener">
+    
+<table id="menu-top">
+  <tr>
+    <td width="200px">    
 
+      <h1 id="logo">
+        <a [routerLink]="['/HomePage']"></a>
+      </h1>
     
-  <div id="menu">  
-    <h1>{{title}}</h1>
-    <a [routerLink]="['HomePage']">Strona Główna</a>
-    <a [routerLink]="['Inne1']">Inne 1</a>
-    <a [routerLink]="['Heroes']">H</a>
-  </div> 
+    </td>
+ 
+<td width="600px">
+
+<ul id="menu">
+  <div id="right5" class="l"></div>
+    <li><a href="#/oFirmie">O Firmie</a>
+     <ul>
+        <li><a href="#">Grupa</a></li>
+        <li><a href="#">Kierownictwo</a></li>
+        <li><a href="#">Ludzie Naprzód</a></li>
+      </ul>
+    </li>
+    <li><a href="#/uslugi">Usługi</a>
+      <ul>
+        <li><a href="#">Nasza oferta</a></li>
+        <li><a href="#">Placówki służby zdrowia</a></li>
+        <li><a href="#">Uslugi dla firm</a></li>
+        <li><a href="#">Uslugi komunalne</a></li>
+        <li><a href="#">Catering</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Standardy</a></li>
+    <li><a href="#">Kontakt</a>
+      <ul>
+        <li><a href="#">Naprzód w Polsce</a></li>
+      </ul>
+    </li>
+</ul>
+
+</td>
+
+</tr>
+</table>
+
+</div>
+  
     
-  <div class="color"></div>
-  <div class="clear"></div>
+ <!-- <div class="color"></div>
+  <div class="clear"></div> -->
     
  </header>  
  
@@ -20,4 +69,4 @@
  
  <div id="container">
   <router-outlet></router-outlet>
-</div> 
+</div>

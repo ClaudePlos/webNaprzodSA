@@ -43,14 +43,24 @@ h3 { text-align: center; margin-bottom: 0; }
 }
 
 
-h1#main1 {
-  background: url(images/main1.png); /*no-repeat top left*/
-  width: 599px;
-  height: 369px;
+h1#ofirmie {
+  background: url(images/_ofirmie.jpg); /*no-repeat top left*/
+  width: 807px;
+  height: 99px;
   margin: 0px;
   display: block;
   text-indent: -9999px;
 }
+
+h1#polska {
+  background: url(images/polska.jpg); /*no-repeat top left*/
+  width: 335px;
+  height: 296px;
+  margin: 0px;
+  display: block;
+  text-indent: -9999px;
+}
+
 
 
 
@@ -75,6 +85,8 @@ body {font-family: calibri, tahoma; background: #e6e6e6;}
 #menu {border-radius: 3px;}
 #menu li ul {border-radius: 0 0 3px 3px;}
 
+
+
 #tab1, #tab2 {
 	border-collapse: collapse;
     border: 1px solid grey;
@@ -92,3 +104,16 @@ body {font-family: calibri, tahoma; background: #e6e6e6;}
 #tab3 {
     border: 0px solid
 }
+
+
+
+/*
+#wrap-bottom {
+    position: relative;
+    top: 15px;
+    left: 400px;
+    width: 799px;
+    height: 9px;
+}
+
+*/

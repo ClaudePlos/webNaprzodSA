@@ -1,3 +1,4 @@
+/*
 #header {
   height: 64px;
   background: #fff;
@@ -6,6 +7,7 @@
   left: 0;
   width: 100%;
 }
+*/
 
 #header h1#logo {
   float: left;
@@ -14,13 +16,13 @@
 
 #header h1#logo a {
   background: url(images/logoNaprzod.png); /*no-repeat top left*/
-  width: 160px;
-  height: 14px;
+  width: 171px;
+  height: 24px;
   margin: 5px;
   display: block;
   text-indent: -9999px;
 }
-
+/**
 #header .router-link-active {
   color: #337cc7;
 }
@@ -31,10 +33,11 @@
   position: absolute;
   top: 100%;
   width: 100%;
-}
+}*/
 
 /*#header #menu {float:left;padding:17px 40px 0 0;}*/
 
+/*
 #container {padding:100px 20px 20px 20px;}
 
 .color {
@@ -67,3 +70,40 @@
    color: white; 
    background-color: #52b9e9;
    }
+   */
+   
+   /*PODSTAWOWE USTAWIENIA*/
+body {font-family: calibri, tahoma; background: #e6e6e6;}
+
+#kontener {width: 960px; margin: 0 auto;}
+#menu {display: table; padding: 0 10px 0; margin: 0 auto; overflow: hidden; font-size: 14px; background: white;}
+#menu li {list-style-type: none; margin: 0 auto; float: left; }
+#menu li:hover {background: #404040;}
+#menu li a {display: block; color: black; text-decoration: none; padding: 7px 10px 7px;}
+#menu li a:hover {background: #404040; color: white;}
+#menu li li a {width: 160px;}
+#menu li ul {overflow: hidden; display: none; background: white;}
+#menu li:hover ul {position: absolute; padding: 0; display: block; width: 160px;}
+
+/*ANIMACJA - tylko CSS3*/
+#menu *:hover {transition: 0.3s ease-in;}
+
+/*ZAOKRĄGLONE ROGI - tylko CSS3*/
+#menu {border-radius: 3px;}
+#menu li ul {border-radius: 0 0 3px 3px;}
+
+table {
+    border-collapse: collapse;
+}
+
+table, td, th {
+    border: 1px solid grey;
+}
+
+#right5 {
+	float: right;
+	margin: 0 auto;
+	width: 599px;
+    height: 9px;
+    background: url(images/gora.png) no-repeat;
+}
