@@ -2,13 +2,12 @@ import {Component} from 'angular2/core';
 
 @Component({
   selector: 'uslugi',
-  templateUrl: 'app/views/uslugi/uslugi.component.html',
-  styleUrls: ['app/views/uslugi/uslugi.component.css']
+  templateUrl: 'app/views/standardy/standardy.component.html',
+  styleUrls: ['app/views/standardy/standardy.component.css']
 })
 
-export class UslugiComponent {
+export class StandardyComponent {
   title: string = 'NASZA OFERTA';
   body: string = 'Opis usług: ';
   message: string;
-
 }

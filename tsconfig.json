@@ -27,6 +27,8 @@
     "app/inne1/inne1-details/inne1.detail.component.ts",
     "app/views/oFirmie/oFirmie.component.ts",
     "app/views/uslugi/uslugi.component.ts",
+    "app/views/standardy/standardy.component.ts",
+    "app/views/kontakty/kontakty.component.ts",
     "app/hero-detail.component.ts",
     "app/hero.service.ts",
     "app/hero.ts",
