@@ -17,11 +17,19 @@ class User {
     <button (click)="onGetUsers()">Test users</button><br>
     <p>Output: {{contacts}}</p>
     
+    Pass, when you click on name user: <input type="text" [(ngModel)]="selectedItem">
+    <button (click)="onDeleteItem()">Delete Item</button>
+    <br>
+    <input type="text" #userNew>
+    <button (click)="onAddItem(userNew)">Add new name user</button>
     <h1>Angular2 HTTP Demo App</h1>
     <h2>Users</h2>
     <ul>
-        <li *ngFor="#user of users">{{user.prcId}}, {{user.uzNazwa}}</li>
+        <li *ngFor="#user of users" (click)="onItemClicked(user.uzHasloZakodowane)">
+         {{user.prcId}}, {{user.uzNazwa}}
+        </li>
     </ul>
+    
     
     `,
     providers: [HTTPTestService]
@@ -31,6 +39,7 @@ export class HTTPTestComponent implements OnInit {
     postData: string;
     contacts: string;
     public users = [{}];
+    public selectedItem: {uzHasloZakodowane: ''};
 
     constructor (private _httpService: HTTPTestService) {}
 
@@ -63,5 +72,17 @@ export class HTTPTestComponent implements OnInit {
              error => alert(error),
              () => console.log('Finished')
          );
+    }
+
+    onItemClicked(item: {uzHasloZakodowane: ''}) {
+        this.selectedItem = item;
+    }
+
+    onAddItem(userNew) {
+        this.users.push({uzNazwa: userNew.value});
+    }
+
+    onDeleteItem() {
+        this.users.splice( this.users.indexOf(this.selectedItem), 1);
     }
 }
