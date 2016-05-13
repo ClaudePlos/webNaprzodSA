@@ -14,3 +14,7 @@ w /webNaprzodSA
 
 wchodzimy wtedy do foderu /webNaprzodSA/dist i tam http-server
 
+
+## Http - komunikacja
+Komunikacja po Rest -> Włacza Netebansa z projketem web, który wysyła resta
+

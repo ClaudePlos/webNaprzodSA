@@ -11,12 +11,13 @@ import {OFirmieComponent} from './views/oFirmie/oFirmie.component';
 import {UslugiComponent} from './views/uslugi/uslugi.component';
 import {StandardyComponent} from './views/standardy/standardy.component';
 import {KontaktyComponent} from './views/kontakty/kontakty.component';
+import {HTTPTestComponent} from './http-test.component';
 
 @Component({
   selector: 'my-app',
   templateUrl: 'app/app.component.html',
   styleUrls: ['app/app.component.css'],
-  directives: [ROUTER_DIRECTIVES],
+  directives: [ROUTER_DIRECTIVES, HTTPTestComponent],
   providers: [HeroService, StateService, ExperimentsService],
 })
 @RouteConfig([

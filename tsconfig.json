@@ -18,6 +18,8 @@
   ],
   "files": [
     "app/app.component.ts",
+    "app/http-test.component.ts",
+    "app/http-test.service.ts",
     "app/boot.ts",
     "app/homePage.component.ts",
     "app/common/experiment.model.ts",
